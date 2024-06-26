@@ -29,6 +29,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('job.user')" :active="request()->routeIs('job.user')">
+                        {{ __('User hiring') }}
+                    </x-nav-link>
+
                   
                     <x-nav-link :active="request()->routeIs('users.search')">
                         <form action="{{ route('users.search') }}" method="GET" class="search-form">
